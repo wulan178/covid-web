@@ -4,13 +4,13 @@ import ListPrevention from "../molecules/ListPrevention";
 
 export default function Prevention() {
     return (
-        <div className="px-8 mt-16">
-            <h2>Prevention</h2>
+        <div className="lg:px-8 lg:mt-16 sm:px-4 px-3 mt-14">
+            <h2 id="Prevention">Prevention</h2>
             <h4>
                 Protect yourself and others around you by knowing the facts and taking appropriate precautions. Floow advice provided by your local
                 health authority.
             </h4>
-            <div className="grid grid-cols-3 gap-5 w-11/12 mx-auto">
+            <div className="grid grid-cols-3 lg:gap-5 gap-3 lg:w-11/12 w-full mx-auto">
                 <ListPrevention
                     img="/images/wear-mask.svg"
                     title="Wear a mask"

@@ -64,7 +64,7 @@ export default function Statistic() {
                     lastUpdate: countryData?.Last_Update ? countryData?.Last_Update : 0,
                 });
             }
-            console.log(countryName, countryData)
+            console.log(countryName, countryData);
         } catch (error) {
             console.error(error);
         }
@@ -76,21 +76,22 @@ export default function Statistic() {
 
     const RenderStatistic = ({ title, value, color }) => {
         return (
-            <div className="text-center px-3 py-4 w-full bg-white rounded-md">
-                <h5 className="mb-3 text-lg">{title}</h5>
-                <h3 className={`py-5 text-3xl font-semibold ${color}`}>{abbreviateNumber(parseInt(value))}</h3>
+            <div className="lg:col-span-3 sm:col-span-6 col-span-12 text-center w-full bg-white max-w-[24rem] rounded-md shadow-lg overflow-hidden">
+                <h5 className="text-green-950 md:text-lg font-semibold px-3 py-2 bg-neutral-200">{title}</h5>
+                <h3 className={`px-3 sm:py-5 py-6 text-3xl font-semibold ${color}`}>{abbreviateNumber(parseInt(value))}</h3>
             </div>
         );
     };
 
     return (
-        <main className="px-8 mt-16 mx-auto w-full">
-            <div className="px-7 flex flex-col divide-y divide-white shadow-md rounded-lg bg-gradient-to-br from-green-900 via-green-700 to-green-500 w-full h-max md:min-h-[22rem]">
+        <main className="lg:px-8 lg:mt-16 sm:px-4 px-3 mx-auto w-full">
+            <h2 id="Statistic">Statistic</h2>
+            <div className="px-7 flex flex-col divide-y divide-white shadow-md rounded-lg bg-gradient-to-br from-green-900 via-green-700 to-green-500 w-full h-max md:min-h-[22rem] mt-10">
                 <div className="md:py-10 py-8">
                     <h5 className="statistic" onClick={() => setActiveTab(0)}>
                         GLOBAL
                     </h5>
-                    <div className="grid grid-cols-4 place-items-center gap-4 mx-auto w-full">
+                    <div className="grid grid-cols-12 place-items-center gap-5 mx-auto w-full md:w-11/12">
                         <RenderStatistic color="text-red-500" title="Active Cases" value={globalStat.active} />
                         <RenderStatistic color="text-yellow-500" title="Confirmed" value={globalStat.confirmed} />
                         <RenderStatistic color="text-slate-500" title="Deaths" value={globalStat.deaths} />
@@ -101,19 +102,14 @@ export default function Statistic() {
                     <h5 className="statistic" onClick={() => setActiveTab(1)}>
                         {country?.toUpperCase()}
                     </h5>
-                    <div className="grid grid-cols-4 place-items-center gap-4 mx-auto w-full">
+                    <div className="grid grid-cols-12 place-items-center gap-5 mx-auto w-full md:w-11/12">
                         <RenderStatistic color="text-red-500" title="Active Cases" value={countryStat.active} />
                         <RenderStatistic color="text-yellow-500" title="Confirmed" value={countryStat.confirmed} />
                         <RenderStatistic color="text-slate-500" title="Deaths" value={countryStat.deaths} />
                         <RenderStatistic color="text-green-500" title="Recovered" value={countryStat.recovered} />
                     </div>
-                    <Listbox
-                        value={country}
-                        onChange={setCountry}
-                        as="div"
-                        className="mx-auto text-center relative my-7"
-                    >
-                        <Listbox.Button className="inline-flex items-center gap-2 bg-white rounded-sm px-2 py-1.5">
+                    <Listbox value={country} onChange={setCountry} as="div" className="mx-auto text-center relative my-7">
+                        <Listbox.Button className="flex items-center justify-between w-full sm:w-auto gap-2 lg:gap-4 bg-white rounded-sm lg:px-4 px-3 py-2 max-w-[24rem] mx-auto">
                             <span className="text-left text-sm">{country}</span>
                             <Image src="/icons/unfold.png" width={20} height={20} alt="chevron" />
                         </Listbox.Button>

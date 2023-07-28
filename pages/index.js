@@ -18,7 +18,6 @@ export default function Home() {
             <Navbar />
             <Hero />
             <Statistic />
-            {/* <WeDo /> */}
             <Prevention />
             <Symptoms />
             <NeedHelp />
