@@ -5,14 +5,14 @@ export default function ListPrevention(
     {title, desc, img, width, height}
 ) {
     return (
-        <div className="col-lg-4">
-            <div className="shadow px-auto prevcard">
-                <div className="text-center prevcard-img">
-                    <Image src={img} width={width} height={height} />
+        <div className="col-span-1 p-3">
+            <div className="flex flex-col items-center">
+                <div className="text-center h-56 grid place-items-center">
+                    <Image src={img} width={210} height={204} alt="illustration" />
                 </div>
-                <h5 className="text-center prevcard-title">{title}</h5>
-                <p className="prevcard-desc">{desc}</p>
+                <h5 className="text-center font-semibold md:text-lg">{title}</h5>
+                <p className="text-center w-11/12">{desc}</p>
             </div>
         </div>
-    )
+    );
 }

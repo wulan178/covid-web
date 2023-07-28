@@ -1,17 +1,15 @@
-import '../styles/globals.css';
-import Head from 'next/head'
+import "../styles/globals.css";
+import { Poppins } from "next/font/google";
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <>
-    <Head>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></link>
-    </Head>
-    <Component {...pageProps} />
-    </>
-  ) 
-  
-  
+const poppins = Poppins({
+    weight: ["400", "500", "600", "700"],
+    subsets: ["latin"],
+});
+
+export default function MyApp({ Component, pageProps }) {
+    return (
+        <main className={poppins.className}>
+            <Component {...pageProps} />
+        </main>
+    );
 }
-
-export default MyApp
