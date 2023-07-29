@@ -154,7 +154,7 @@ export default function Statistics() {
     };
 
     return (
-        <main className="lg:px-8 lg:mt-16 sm:px-4 px-3 mx-auto w-full">
+        <main className="section-container mx-auto w-full">
             <Heading
                 title="Statistic"
                 subtitle="Stay informed with the latest COVID-19 statistics from around the world and get country-specific updates to understand the current pandemic situation better."
