@@ -11,7 +11,7 @@ CovInfoID is a web project built with Next.js and Tailwind CSS that provides COV
 
 ## Live Demo
 
-Check out the live demo of CovInfoID at [[https://www.covinfo-id.com]](https://convinfo-id.netlify.app/)
+Check out the live demo of CovInfoID at [https://covinfo-id.netlify.id](https://convinfo-id.netlify.app/)
 
 ## Tech Stack
 
