@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CovInfoID - COVID-19 Global and Countries Statistics
 
-## Getting Started
+CovInfoID is a web project built with Next.js and Tailwind CSS that provides COVID-19 statistics for both global and individual countries. Stay informed about the pandemic situation with data sourced from the public API at https://covid19.keponet.com.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- View up-to-date COVID-19 statistics for the entire world.
+- Learn about COVID-19 preventions to protect yourself and others.
+- Understand the common symptoms of COVID-19 for early detection.
+- Responsive design for optimal viewing on all devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Live Demo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Check out the live demo of CovInfoID at [[https://www.covinfo-id.com]](https://convinfo-id.netlify.app/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Tech Stack
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Next.js: A React framework for server-side rendering and static site generation.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+- Public API: Data sourced from [https://covid19.keponet.com](https://covid19.keponet.com).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for using CovInfoID to stay informed about COVID-19 statistics. We hope this web project helps you understand the pandemic's global impact. Stay safe and take care!
