@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -36,6 +36,46 @@ p {
     @apply text-sm sm:text-base;
 }
 
-.statistic {
+nav {
+    @apply fixed z-50 top-0 left-0 w-full lg:px-5 lg:py-4 py-3 sm:px-4 px-3 bg-neutral-300/50 backdrop-blur-lg flex items-center justify-between gap-2;
+}
+
+.section-container {
+    @apply lg:px-8 lg:mt-16 sm:px-4 px-3 mt-14;
+}
+
+.statistic-container {
+    @apply px-7 flex flex-col divide-y divide-white shadow-md rounded-lg bg-gradient-to-br from-green-900 via-green-700 to-green-500 w-full h-max md:min-h-[22rem] mt-10;
+}
+
+.statistic-card-container {
+    @apply grid grid-cols-12 place-items-center gap-5 mx-auto w-full md:w-11/12;
+}
+
+.statistic-card {
+    @apply lg:col-span-3 sm:col-span-6 col-span-12 text-center w-full bg-white max-w-[24rem] rounded-md shadow-lg overflow-hidden;
+}
+
+.statistic-title {
     @apply text-center mx-auto w-max font-medium text-white text-lg md:text-xl md:mb-8 sm:mb-6 mb-5;
+}
+
+.select-button {
+    @apply flex items-center justify-between w-full sm:w-auto gap-2 lg:gap-4 bg-white rounded-sm lg:px-4 px-3 py-2 max-w-[24rem] mx-auto outline-none;
+}
+
+.select-options {
+    @apply absolute z-40 top-10 mt-1 max-h-60 w-full md:w-80 overflow-auto rounded-lg bg-white py-1 text-base shadow-lg ring-0 focus:outline-none sm:text-sm left-1/2 -translate-x-1/2;
+}
+
+.select-option {
+    @apply relative cursor-default select-none py-2 px-5 hover:bg-green-100 hover:text-green-900 text-gray-900;
+}
+
+.select-option span {
+    @apply flex justify-between text-left text-sm gap-3 items-center break-words;
+}
+
+.prevention-card {
+    @apply grid grid-cols-2 gap-4 shadow-lg p-4 md:min-h-[26rem] lg:min-h-[24rem] rounded-xl border hover:scale-105 transition-all ease-in-out duration-150 bg-white delay-150 hover:shadow-xl;
 }

@@ -16,6 +16,6 @@ export const getCountry = async (country) => {
     return await covidApi.get(`/api/negara/${country}`);
 };
 
-export const getListCountries = async () => {
+export const getCountries = async () => {
     return await countriesApi.get(`/v3.1/all?fields=name,flags`);
 };

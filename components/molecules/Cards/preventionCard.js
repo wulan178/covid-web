@@ -1,10 +1,10 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 
-export default function ListPrevention({ title, desc, img }) {
+export default function PreventionCard({ title, desc, img }) {
     return (
         <div className="md:col-span-1 col-span-3 lg:p-3 p-0">
-            <div className="grid grid-cols-2 gap-4 shadow-lg p-4 md:min-h-[26rem] lg:min-h-[24rem] rounded-xl border hover:scale-105 transition-all ease-in-out duration-150 group bg-white delay-150">
+            <div className="prevention-card group">
                 <Image
                     src={img}
                     width={210}
